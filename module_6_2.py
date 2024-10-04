@@ -25,8 +25,8 @@ class Vehicle:
     def set_color(self, color):
         if color.lower() not in Vehicle.__COLOR_VARIANTS:
             print(f"Нельзя сменить цвет на {color}")
-
-        self.__color = color
+        else:
+            self.__color = color
 
     def print_info(self):
         print(f"Модель: {self.get_model()}")
